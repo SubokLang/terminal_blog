@@ -27,7 +27,9 @@ class Post():
 
     @staticmethod
     def from_mongo(id):
-        return Database.find_one(collection='posts',query={'id':id})
+        # print(id)
+        foundit = Database.find_one('posts', {'id': id})
+        return foundit
 
     @staticmethod
     def from_blog(id):
