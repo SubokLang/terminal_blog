@@ -24,7 +24,7 @@ class Database():
     @staticmethod
     def find_one(collection, query):
         #print(collection)
-        print(Database.DB)
-        print(query)
-        print(type(query))
+        #print(Database.DB)
+        #print(query)
+        #print(type(query))
         return Database.DB[collection].find_one(query)
